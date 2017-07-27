@@ -1,10 +1,9 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/index/index",
-    "pages/logs/logs",
     "pages/content/content",
-    "pages/setting/setting"
+    "pages/setting/setting",
+    "pages/order/order"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffff73",

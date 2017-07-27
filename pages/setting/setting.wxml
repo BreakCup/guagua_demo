@@ -6,10 +6,13 @@
 	</view >
 
 
-	<view class="btn-area"> 
-		<button wx:for="{{btn_text}}" plain="true" data-idx="{{index}}" wx:key="unique" class="btn button-hover" bindtap="btnTap"> 
-		{{item}}</button>
+	<view class="select-area">
+		<view class="item-inner" bindtap="itemTap" data-idx="{{index}}" wx:key="unique" wx:for="{{item_text}}">{{item}}</view> 
+		
 	</view>
+
+	<!--<button wx:for="{{btn_text}}" plain="true" data-idx="{{index}}" wx:key="unique" class="btn" bindtap="btnTap"> 
+		{{item}}</button>-->
 	
 
 </view>

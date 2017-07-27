@@ -1,41 +1,19 @@
-// setting.js
-var app =getApp()
-
+// order.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    item_tap: 0,
-    item_text: ['身份管理', '店铺管理', '意见反馈', '关于我们', '软件版本'],
-    nickName: '',
-    avatarUrl: ''
-
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-    var _this = this
-    app.getUserInfo(function(userInfo){
-      _this.setData({
-        nickName:userInfo.nickName,
-        avatarUrl:userInfo.avatarUrl
-      })
-      console.log(userInfo)
-      
-    })
   
-
   },
-  itemTap: function (e) {
-    this.data.item_tap = e.target.dataset.idx;
-    console.log(this.data.item_tap)
-  },
-
 
   /**
    * 生命周期函数--监听页面初次渲染完成
