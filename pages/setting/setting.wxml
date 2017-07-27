@@ -1,0 +1,15 @@
+<!--setting.wxml-->
+<view class="container">
+	<view class="user-info">
+		<image class="avatar-style" src="{{avatarUrl}}"></image>
+		<text class="nickname-style">{{nickName}}</text>
+	</view >
+
+
+	<view class="btn-area"> 
+		<button wx:for="{{btn_text}}" plain="true" data-idx="{{index}}" wx:key="unique" class="btn button-hover" bindtap="btnTap"> 
+		{{item}}</button>
+	</view>
+	
+
+</view>

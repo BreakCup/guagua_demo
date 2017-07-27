@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/content/content",
+    "pages/setting/setting"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffff73",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "呱呱养车（商户版）",
+    "backgroundColor": "#ffff84",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "src/home.png",
+        "selectedIconPath": "src/home_hl.png"
+      },
+      {
+        "pagePath": "pages/content/content",
+        "text": "内容",
+        "iconPath": "src/content.png",
+        "selectedIconPath": "src/content_hl.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "设置",
+        "iconPath": "src/setting.png",
+        "selectedIconPath": "src/setting_hl.png"
+      }
+    ],
+    "backgroundColor": "#ffffff",
+    "color": "#bbb"
+  }
+}

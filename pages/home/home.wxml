@@ -1,0 +1,35 @@
+<!--home.wxml-->
+<view>
+	<!--导航栏-->
+	<view >
+		<!--搜索框-->
+		<view class="search">
+			<icon class="search-icon" type="search" size="20"/>
+
+			<input class="search-style" placeholder="搜索订单" />
+		</view>
+
+		<!--导航条-->  
+		<view class="navbar">  
+		  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+		</view>  
+	</view>
+
+	<scroll-view class="scroll-view-style">
+		<!--处理中-->  
+		<view hidden="{{currentTab!==0}}"> 
+				<view wx:for="{{order_handle_list}}" wx:key="view-{{index}}" id="view-{{index}}"><text class="order-list-style" wx:key="order-{{index}}" id ="order-{{index}}" data-place="{{index}}" bindlongtap="orderLongTap">处理中页面{{index}}</text></view>
+		</view>  
+		  
+		<!--预约-->  
+		<view hidden="{{currentTab!==1}}">  
+		  	<view wx:for="{{order_appoi_list}}" id="view-{{index}}"><text id ="order-{{index}}">预约页面{{item}}</text></view>
+		</view>  
+	</scroll-view>
+
+	<!--添加按钮--> 
+	<view class="ima-posision">
+		<image class="img-add" src="../../src/add_128_blk.png" bindtap="addTap" ></image>
+		<!--<button class="btn-add">+</button>-->
+	</view>
+</view>

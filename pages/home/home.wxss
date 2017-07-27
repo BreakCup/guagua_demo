@@ -1,0 +1,94 @@
+/* home.wxss */
+page{  
+  display: flex;  
+  flex-direction: column;  
+  height: 100%;  
+}  
+
+
+.navbar{    
+  display: flex;
+  flex-direction: row;  
+  background: #fff;  
+}  
+.navbar .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  color: #777;
+  line-height: 80rpx;  
+}  
+.navbar .item.active{  
+  color: #FFCC00;  
+}  
+.navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 4rpx;  
+  background: #FFCC00;  
+}  
+
+.order-list{
+	display: flex;
+
+}
+
+.search{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	border-style: solid;
+	border-width: 2rpx;
+	border-color: #FFCC00;
+	margin:20rpx auto;
+	width: 500rpx;
+}
+.search-icon{
+	margin-top:6rpx;
+	margin-left: 12rpx;
+}
+.search-style{
+	position: relative;
+	width:85%;
+	margin:0rpx 10rpx;
+	font-size: 24rpx;
+
+}
+
+.img-posision{
+
+	
+}
+
+.img-add{
+	position: fixed;
+	right: 50rpx;
+	bottom: 50rpx;
+
+	width: 100rpx;
+	height: 100rpx;
+	
+}
+.btn-add{
+	position: fixed;
+	right: 20rpx;
+	bottom: 20rpx;
+
+	width: 86rpx;
+	height: 86rpx;
+
+	border-radius: 50%;
+
+}
+
+.scroll-view-style{
+	height:930rpx;
+}
+
+.order-list-style{
+
+}
