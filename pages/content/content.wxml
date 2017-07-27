@@ -1,2 +1,8 @@
 <!--content.wxml-->
-<text>content.wxml</text>
+<view>
+	<view>
+		<view class="item-inner">服务项</view>
+		<view class="item-inner">其他</view>
+	</view>
+</view>
+

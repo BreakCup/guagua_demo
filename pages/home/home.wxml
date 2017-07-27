@@ -15,7 +15,7 @@
 		</view>  
 	</view>
 
-	<scroll-view class="scroll-view-style">
+	<scroll-view class="scroll-view-style" scroll-y="true">
 		<!--处理中-->  
 		<view hidden="{{currentTab!==0}}"> 
 				<view wx:for="{{order_handle_list}}" wx:key="view-{{index}}" id="view-{{index}}"><text class="order-list-style" wx:key="order-{{index}}" id ="order-{{index}}" data-place="{{index}}" bindlongtap="orderLongTap">处理中页面{{index}}</text></view>
@@ -28,7 +28,7 @@
 	</scroll-view>
 
 	<!--添加按钮--> 
-	<view class="ima-posision">
+	<view class="img-posision">
 		<image class="img-add" src="../../src/add_128_blk.png" bindtap="addTap" ></image>
 		<!--<button class="btn-add">+</button>-->
 	</view>

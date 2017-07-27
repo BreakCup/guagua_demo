@@ -45,6 +45,7 @@
 	font-color:#ccc;
 }
 .select-area .item-inner:active{
-	background-color: #eee;
+	background-color: #d4f1d7;
+	opacity: 0.1;
 
 }

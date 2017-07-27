@@ -60,6 +60,7 @@ page{
 }
 
 .img-posision{
+	position: fixed;
 
 	
 }
@@ -73,6 +74,17 @@ page{
 	height: 100rpx;
 	
 }
+.img-posision .img-add:active{
+
+	width:110rpx;
+	height: 110rpx;
+
+	right: 45rpx;
+	bottom:45rpx;
+
+	opacity: 0.5;
+}
+
 .btn-add{
 	position: fixed;
 	right: 20rpx;
@@ -87,6 +99,7 @@ page{
 
 .scroll-view-style{
 	height:930rpx;
+
 }
 
 .order-list-style{

@@ -1,1 +1,10 @@
 /* content.wxss */
+.item-inner{
+	box-sizing: border-box;
+	margin-top:20rpx;
+
+}
+.item-inner:active{
+	background-color: #fff8c4;
+	opacity:0.5;
+}
