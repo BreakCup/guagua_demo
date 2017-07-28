@@ -1,0 +1,32 @@
+/* pages/service/service.wxss */
+.page{
+	display: flex !important;
+	flex-direction: row !important;
+}
+.navbar-left{
+	width: 30%;
+	height: 1200rpx;
+	background-color: #eee;
+
+}
+.list{
+	width: 70%;
+	height: 1200rpx;
+	right: 0rpx;
+}
+.group-item{
+	border-bottom: 1rpx solid #ddd;
+	height: 100rpx;
+	line-height: 100rpx;
+	text-align: center;
+
+}
+.group-item.active{
+	background-color: #fff;
+}
+
+.img-add-position{
+	position: fixed;
+	right: 50rpx;
+	bottom: 50rpx;
+}

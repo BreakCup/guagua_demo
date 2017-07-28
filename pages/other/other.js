@@ -1,4 +1,4 @@
-// content.js
+// pages/other/other.js
 Page({
 
   /**
@@ -8,22 +8,6 @@ Page({
   
   },
 
-
-  serviceTap:function(e){
-    console.log("点击服务项")
-    wx.redirectTo({
-      url: '../service/service'
-   })
-
-  },
-
-  otherTap:function(e){
-    console.log("点击其他")
-    wx.redirectTo({
-      url: '../other/other'
-   })
-
-  },
   /**
    * 生命周期函数--监听页面加载
    */

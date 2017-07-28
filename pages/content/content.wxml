@@ -1,8 +1,17 @@
 <!--content.wxml-->
 <view class="page">
-	<view>
-		<view class="item-inner">服务项</view>
-		<view class="item-inner">其他</view>
+
+	<view class="weui-cells weui-cells_access">
+		<view class="weui-cell" bindtap="serviceTap">
+			<view class="weui-cell__bd">服务项</view>
+			<view class="weui-cell__ft">></view>
+		</view>
+		<view class="weui-cell" bindtap="otherTap">
+			<view class="weui-cell__bd">其他</view>
+			<view class="weui-cell__ft">></view>
+		</view>
+		
+		
 	</view>
 </view>
 

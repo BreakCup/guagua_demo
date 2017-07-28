@@ -1,29 +1,25 @@
-// content.js
+// pages/service/service.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    group:{
+      group_name:['服务组1','服务组2','服务组3','服务组4'],
+      group_list:['list1','list2']},
+    currentTab:0
   
   },
+  
+  navbarTap: function (e) {
+    this.setData({
+      currentTab: e.currentTarget.dataset.idx
 
-
-  serviceTap:function(e){
-    console.log("点击服务项")
-    wx.redirectTo({
-      url: '../service/service'
-   })
-
-  },
-
-  otherTap:function(e){
-    console.log("点击其他")
-    wx.redirectTo({
-      url: '../other/other'
-   })
+    })
 
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
