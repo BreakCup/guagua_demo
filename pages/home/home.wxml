@@ -1,13 +1,15 @@
 <!--home.wxml-->
-<view>
+<view class="page">
 	<!--导航栏-->
-	<view >
+	<view class="navbar-brand">
 		<!--搜索框-->
+		
 		<view class="search">
 			<icon class="search-icon" type="search" size="20"/>
 
 			<input class="search-style" placeholder="搜索订单" />
 		</view>
+		
 
 		<!--导航条-->  
 		<view class="navbar">  
@@ -15,10 +17,18 @@
 		</view>  
 	</view>
 
-	<scroll-view class="scroll-view-style" scroll-y="true">
+	<scroll-view class="scroll-view-style" scroll-y="true" bindscrolltolower="Upper">
 		<!--处理中-->  
 		<view hidden="{{currentTab!==0}}"> 
-				<view wx:for="{{order_handle_list}}" wx:key="view-{{index}}" id="view-{{index}}"><text class="order-list-style" wx:key="order-{{index}}" id ="order-{{index}}" data-place="{{index}}" bindlongtap="orderLongTap">处理中页面{{index}}</text></view>
+				<!--<view wx:for="{{order_handle_list}}" wx:key="view-{{index}}" id="view-{{index}}"><text class="order-list-style" wx:key="order-{{index}}" id ="order-{{index}}" data-place="{{index}}" bindlongtap="orderLongTap">处理中页面{{index}}</text></view>-->
+				<view class="item-order" wx:for="{{order_handle_list}}">
+					<view class="item-inner-left">
+						<view style="display: flex;flex-direction: row"><image src="../../src/user_16.png" style="width: 25rpx;height:25rpx;margin:10rpx 10rpx 0rpx 10rpx;"></image><view class="item-inner-id">user-ID</view></view>
+						<view class="item-inner-car">car-number</view>
+					</view>
+					<view class="item-inner-time">time</view>
+
+				</view>
 		</view>  
 		  
 		<!--预约-->  
@@ -29,7 +39,7 @@
 
 	<!--添加按钮--> 
 	<view class="img-posision">
-		<image class="img-add" src="../../src/add_128_blk.png" bindtap="addTap" ></image>
-		<!--<button class="btn-add">+</button>-->
+		<image class="img-add" src="../../src/add_128_gre.png" bindtap="addTap" ></image>
+		
 	</view>
 </view>

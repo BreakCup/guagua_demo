@@ -1,5 +1,5 @@
 <!--content.wxml-->
-<view>
+<view class="page">
 	<view>
 		<view class="item-inner">服务项</view>
 		<view class="item-inner">其他</view>

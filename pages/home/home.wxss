@@ -3,6 +3,7 @@ page{
   display: flex;  
   flex-direction: column;  
   height: 100%;  
+  
 }  
 
 
@@ -10,6 +11,7 @@ page{
   display: flex;
   flex-direction: row;  
   background: #fff;  
+  box-shadow: 2px 1px 0px 1px #eee;
 }  
 .navbar .item{  
   position: relative;  
@@ -30,6 +32,7 @@ page{
   right: 0;  
   height: 4rpx;  
   background: #FFCC00;  
+
 }  
 
 .order-list{
@@ -37,6 +40,12 @@ page{
 
 }
 
+.navbar-brand{
+	box-sizing: border-box;
+	background-color: #fff;
+	
+
+}
 .search{
 	display: flex;
 	flex-direction: row;
@@ -44,23 +53,26 @@ page{
 	border-style: solid;
 	border-width: 2rpx;
 	border-color: #FFCC00;
-	margin:20rpx auto;
+	margin:40rpx auto;
 	width: 500rpx;
+	height: 70rpx
 }
-.search-icon{
-	margin-top:6rpx;
+.search .search-icon{
+	margin-top:15rpx;
 	margin-left: 12rpx;
 }
-.search-style{
+.search .search-style{
 	position: relative;
 	width:85%;
-	margin:0rpx 10rpx;
-	font-size: 24rpx;
+	margin:auto 10rpx;
+
+	font-size: 17pt;
 
 }
 
 .img-posision{
 	position: fixed;
+
 
 	
 }
@@ -72,6 +84,8 @@ page{
 
 	width: 100rpx;
 	height: 100rpx;
+
+
 	
 }
 .img-posision .img-add:active{
@@ -85,23 +99,31 @@ page{
 	opacity: 0.5;
 }
 
-.btn-add{
-	position: fixed;
-	right: 20rpx;
-	bottom: 20rpx;
 
-	width: 86rpx;
-	height: 86rpx;
-
-	border-radius: 50%;
-
-}
 
 .scroll-view-style{
 	height:930rpx;
 
 }
 
-.order-list-style{
+.item-order{
+	display: flex;
+	flex-direction: row;
+	border:1rpx solid #ccc;
+	margin:40rpx 20rpx 40rpx 20rpx;
+	height: 100rpx;
+}
+.item-inner-left{
+	position: absolute;
+	left: 25rpx;
+	height: 100rpx;
 
+}
+.item-inner-time{
+	position: absolute;
+	right: 25rpx;
+	text-align: right;
+	line-height: 100rpx;
+	height: 100rpx;
+	
 }

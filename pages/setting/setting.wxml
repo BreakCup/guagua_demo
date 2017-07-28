@@ -1,5 +1,5 @@
 <!--setting.wxml-->
-<view class="container">
+<view class="page">
 	<view class="user-info">
 		<image class="avatar-style" src="{{avatarUrl}}"></image>
 		<text class="nickname-style">{{nickName}}</text>
@@ -10,6 +10,8 @@
 		<view class="item-inner" bindtap="itemTap" data-idx="{{index}}" wx:key="unique" wx:for="{{item_text}}">{{item}}</view> 
 		
 	</view>
+
+	
 
 	<!--<button wx:for="{{btn_text}}" plain="true" data-idx="{{index}}" wx:key="unique" class="btn" bindtap="btnTap"> 
 		{{item}}</button>-->

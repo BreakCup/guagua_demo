@@ -19,22 +19,25 @@
         "pagePath": "pages/home/home",
         "text": "首页",
         "iconPath": "src/home.png",
-        "selectedIconPath": "src/home_hl.png"
+        "selectedIconPath": "src/home_hl.png",
+        "selectedColor": "#ffcc00"
       },
       {
         "pagePath": "pages/content/content",
         "text": "内容",
         "iconPath": "src/content.png",
-        "selectedIconPath": "src/content_hl.png"
+        "selectedIconPath": "src/content_hl.png",
+        "selectedColor": "#ffcc00"
       },
       {
         "pagePath": "pages/setting/setting",
         "text": "设置",
         "iconPath": "src/setting.png",
-        "selectedIconPath": "src/setting_hl.png"
+        "selectedIconPath": "src/setting_hl.png",
+        "selectedColor": "#ffcc00"
       }
     ],
     "backgroundColor": "#ffffff",
-    "color": "#bbb"
+    "selectedColor":"#888888"
   }
 }
