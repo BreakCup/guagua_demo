@@ -6,15 +6,21 @@
 	</view >
 
 
+	<!--未使用weui
 	<view class="select-area">
 		<view class="item-inner" bindtap="itemTap" data-idx="{{index}}" wx:key="unique" wx:for="{{item_text}}">{{item}}</view> 
 		
 	</view>
+	-->
 
-	
+	<!--使用Weui-->
+	<view class="weui-cells weui-cells-access"> 
+		<view class="weui-cell" href="#" wx:key="unique" wx:for="{{item_text}}" data-idx="{{index}}">
+			<view class="weui-cell__bd">{{item}}</view>
+			<view class="weui-cell__ft">></view>
+		</view>
+	</view>
 
-	<!--<button wx:for="{{btn_text}}" plain="true" data-idx="{{index}}" wx:key="unique" class="btn" bindtap="btnTap"> 
-		{{item}}</button>-->
-	
+
 
 </view>

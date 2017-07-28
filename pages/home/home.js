@@ -13,8 +13,38 @@ Page({
     navbar: ['处理中', '预约'],
     currentTab: 0,
     order_handle_list: [],
-    order_appoi_list: []
+    order_appoi_list: [],
+
+    inputShowed: false,
+    inputVal: ""
   },
+
+
+
+  
+  showInput: function () {
+      this.setData({
+          inputShowed: true
+       });
+   },
+   hideInput: function () {
+       this.setData({
+            inputVal: "",
+            inputShowed: false
+        });
+   },
+  clearInput: function () {
+       this.setData({
+           inputVal: ""
+      });
+   },
+   inputTyping: function (e) {
+       this.setData({
+           inputVal: e.detail.value
+       });
+   },
+
+
   navbarTap: function (e) {
     this.setData({
       currentTab: e.currentTarget.dataset.idx
