@@ -2,6 +2,7 @@
 
 var order_handle = []
 var order_appoi = []
+var app = getApp()
 
 
 Page({
@@ -53,6 +54,8 @@ Page({
 
   },
   orderLongTap: function (e) {
+    
+
     var _this = this
     console.log(e)
     wx.showModal({
@@ -95,6 +98,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    order_handle=app.globalData.order_handle_list
+    order_appoi=app.globalData.order_appoi_list
+
+    this.setData({
+      order_handle_list : order_handle,
+      order_appoi_list :order_appoi
+    })
+
     
   
   },
@@ -124,7 +135,9 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+    app.globaldata.order_handle_list = order_handle
+    app.globaldata.order_appoi_list = order_appoi
+
   },
 
   /**

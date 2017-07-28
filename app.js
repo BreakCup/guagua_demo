@@ -24,6 +24,8 @@ App({
   },
 
   globalData: {
-    userInfo: null
+    userInfo: null,
+    order_handle_list: [],
+    order_appoi_list: []
   }
 })
