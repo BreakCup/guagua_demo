@@ -7,17 +7,16 @@
 
 	<!--右侧列表-->
 	<view class="list" wx:for="{{group.group_name}}" hidden="{{currentTab!=index}}" wx:key="unique" >
-		<scroll-view class="weui-cells">
-			<view class="weui-cell" wx:for="{{group.group_list}}" wx:key="unique">
-				<view class="weui-cell_bd">list</view>
-			</view>
+		<scroll-view class="">
+			<view class="list-item" wx:for="{{group.group_list}}" wx:key="unique"></view>
 			
 		</scroll-view>
 	</view>
 
 	<!--右下角按钮-->
 	<view class="img-add-position">
-		12
+		<image class="img-service-style" src="../../src/service.png" animation="{{}}"></image>
+		<image class="img-add-style" src="../../src/add_128_orange.png" animation="{{animPlus}}" bindtap="plusTap"></image>
 	</view>
 
 </view>

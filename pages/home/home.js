@@ -52,6 +52,12 @@ Page({
     })
 
   },
+  orderTap:function(e){
+    wx.redirectTo({
+      url: '../order/order'
+    })
+  },
+
   orderLongTap: function (e) {
     var _this = this
     console.log(e)

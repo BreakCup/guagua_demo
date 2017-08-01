@@ -1,6 +1,8 @@
 <!--content.wxml-->
 <view class="page">
 
+	<!--<view class="list-item" bindtap="serviceTap">服务项</view>-->
+
 	<view class="weui-cells weui-cells_access">
 		<view class="weui-cell" bindtap="serviceTap">
 			<view class="weui-cell__bd">服务项</view>
@@ -13,5 +15,8 @@
 		
 		
 	</view>
+
+
+
 </view>
 

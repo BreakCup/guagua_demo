@@ -30,10 +30,15 @@
 
 }  
 
-.order-list{
-	display: flex;
-
+.list-item{
+	position: relative;
+	margin:40rpx auto;
+	width:94%;
+	height: 200rpx;
+	box-shadow:0px 0px 10px 1px #ddd;
 }
+
+
 
 .navbar-brand{
 	box-sizing: border-box;

@@ -23,10 +23,48 @@
 }
 .group-item.active{
 	background-color: #fff;
+	box-shadow: 0rpx 0rpx 10rpx 2rpx #ddd;
 }
 
 .img-add-position{
+	
+
+
+	
+}
+.img-service-item-style{
 	position: fixed;
 	right: 50rpx;
-	bottom: 50rpx;
+	bottom:50rpx;
+
+	width: 100rpx;
+	height: 100rpx;
+}
+.img-service-style{
+	position: fixed;
+	right: 70rpx;
+	bottom:180rpx;
+
+	width: 60rpx;
+	height: 60rpx;
+
+	border-radius: 50%;
+	box-shadow:0 0 5px 2px #ddd;
+}
+.img-add-style{
+	position: fixed;
+	right: 50rpx;
+	bottom:50rpx;
+
+	width: 100rpx;
+	height: 100rpx;
+}
+
+.list-item{
+
+	position: relative;
+	width: 90%;
+	height: 180rpx;
+	margin:20rpx auto;
+	box-shadow: 0rpx 0rpx 10px 1px #ddd;
 }

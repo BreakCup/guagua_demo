@@ -14,7 +14,7 @@
 	-->
 
 	<!--使用Weui-->
-	<view class="weui-cells weui-cells_access" > 
+	<view class="weui-cells weui-cells_access" style="color:#888"> 
 		<view class="weui-cell" href="#" wx:for="{{item_text}}" wx:key="unique" data-idx="{{index}}">
 			<view class="weui-cell__bd">{{item}}</view>
 			<view class="weui-cell__ft">></view>

@@ -37,6 +37,11 @@
 	<scroll-view class="scroll-view-style" scroll-y="true" bindscrolltolower="Upper">
 		<!--处理中-->  
 		<view hidden="{{currentTab!==0}}"> 
+
+			<view class="list-item" href="#" wx:key="unique" wx:for="{{order_handle_list}}" data-idx="{{index}}" bindtap="orderTap" bindlongtap="orderLongTap">
+
+					
+			</view>
 				<!--
 				<view wx:for="{{order_handle_list}}" wx:key="view-{{index}}" id="view-{{index}}"><text class="order-list-style" wx:key="order-{{index}}" id ="order-{{index}}" data-place="{{index}}" bindlongtap="orderLongTap">处理中页面{{index}}</text></view>-->
 				<!--
@@ -49,6 +54,7 @@
 				</view>
 				-->
 				<!--weui表单-->
+				<!--
 				<view class="weui-cells weui-cells_access"> 
 					<view class="weui-cell" href="#" wx:key="unique" wx:for="{{order_handle_list}}" data-idx="{{index}}" bindtap="orderTap" bindlongtap="orderLongTap">
 						<view class="weui-cell__bd">
@@ -58,17 +64,22 @@
 						<view class="weui-cell__ft">time</view>
 					</view>
 				</view>
+				-->
 		</view>  
 		  
 		<!--预约-->  
 		<view hidden="{{currentTab!==1}}">  
-		  	<view wx:for="{{order_appoi_list}}" id="view-{{index}}"><text id ="order-{{index}}">预约页面{{item}}</text></view>
+
+		  	<view class="list-item" href="#" wx:key="unique" wx:for="{{order_appoi_list}}" data-idx="{{index}}" bindtap="orderTap" bindlongtap="orderLongTap">
+
+					
+				</view>
 		</view>  
 	</scroll-view>
 
 	<!--添加按钮--> 
 	<view class="img-posision">
-		<image class="img-add" src="../../src/add_128_gre.png" bindtap="addTap" ></image>
+		<image class="img-add" src="../../src/add_128_orange.png" bindtap="addTap" ></image>
 		
 	</view>
 </view>

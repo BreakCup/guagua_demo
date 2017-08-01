@@ -8,3 +8,10 @@
 	background-color: #fff8c4;
 	opacity:0.5;
 }
+
+.list-item{
+	box-shadow: 0px 0px 10px 1px #eee;
+	width: 600rpx;
+	height: 150rpx;
+	
+}
