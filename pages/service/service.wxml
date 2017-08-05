@@ -14,8 +14,15 @@
 	</view>
 
 	<!--右下角按钮-->
-	<view class="img-add-position">
-		<image class="img-service-style" src="../../src/service.png" animation="{{}}"></image>
+	<view class="img-add-position" >
+		<view class="img-service-item-style" hidden="{{!isPopping}}" bindtap="serviceItemTap">
+			<view class="img-service-item-style" style="right: 150rpx; width:130rpx; height: 60rpx; border-radius: 2%; text-align: center;">服务项</view>
+			<image class="img-service-item-style" style="width: 40rpx;height: 40rpx; right: 80rpx; bottom: 250rpx; box-shadow: none;" src="../../src/service_item.png" animation="{{}}"></image>
+		</view>
+		<view class="img-service-style" hidden="{{!isPopping}}" bindtap="serviceTap">
+			<view class="img-service-style" style="right: 150rpx; width:90rpx; height: 60rpx; border-radius: 2%; text-align: center;">服务</view>
+			<image class="img-service-style" style="width: 40rpx;height: 40rpx; right: 80rpx; bottom: 175rpx; box-shadow: none;" src="../../src/service.png" animation="{{}}"></image>
+		</view>
 		<image class="img-add-style" src="../../src/add_128_orange.png" animation="{{animPlus}}" bindtap="plusTap"></image>
 	</view>
 

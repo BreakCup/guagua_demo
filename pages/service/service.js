@@ -13,12 +13,20 @@ Page({
     animPlus:{}
   
   },
+  serviceItemTap:function(e){
+    console.log("service item tap")
+
+  },
+  serviceTap:function(e){
+    console.log("service tap")
+
+  },
   plusTap:function(e){
     //弹出菜单
-    if (this.data.isPopping) {
+    if (!this.data.isPopping) {
       this.popp();  
       this.setData({  
-        isPopping: false  
+        isPopping: true
       })
 
     }
@@ -26,7 +34,7 @@ Page({
     else{
       this.takeback();  
       this.setData({  
-        isPopping: true  
+        isPopping: false  
       })  
 
     }

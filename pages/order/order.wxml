@@ -1,2 +1,7 @@
 <!--order.wxml-->
-<text>order.wxml</text>
+<view class="page">
+
+	<view>订单编号：</view>
+	<view>用户ID：</view>
+	<view>车牌：</view>
+</view>

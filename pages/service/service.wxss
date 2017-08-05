@@ -34,22 +34,26 @@
 }
 .img-service-item-style{
 	position: fixed;
-	right: 50rpx;
-	bottom:50rpx;
-
-	width: 100rpx;
-	height: 100rpx;
-}
-.img-service-style{
-	position: fixed;
 	right: 70rpx;
-	bottom:180rpx;
+	bottom:240rpx;
 
 	width: 60rpx;
 	height: 60rpx;
 
 	border-radius: 50%;
 	box-shadow:0 0 5px 2px #ddd;
+}
+.img-service-style{
+	position: fixed;
+	right: 70rpx;
+	bottom:165rpx;
+
+	width: 60rpx;
+	height: 60rpx;
+
+	border-radius: 50%;
+	box-shadow:0 0 5px 2px #ddd;
+	align-items: center;
 }
 .img-add-style{
 	position: fixed;
